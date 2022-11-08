@@ -67,6 +67,12 @@ In order for the project to run in your local, both the frontend and backend pac
 - If the appointment table is empty
 ![Randevu kaydı yok](https://user-images.githubusercontent.com/49994631/200666249-0b78f616-e22b-4124-bff1-2a225ef1ec90.PNG)
 
+- Example Request: GET /api/v1/Appointments
+![Appointment Get Request](https://user-images.githubusercontent.com/49994631/200668527-34cbc9a8-4b35-4706-bd8a-7ea0a44e3f12.PNG)
+
+- Example Incorrect Request: DELETE /api/v1/Services/50
+![Hatalı Delete Service Request](https://user-images.githubusercontent.com/49994631/200668967-0967742b-ef9a-4f1a-ad8a-6eb256e09804.PNG)
+
 ## Contact
 
 Created by [@Abdullah Böğrek](https://tr.linkedin.com/in/abdullahbogrek)
