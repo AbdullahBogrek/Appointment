@@ -75,6 +75,8 @@ In order for the project to run in your local, both the frontend and backend pac
 
 ## Contact
 
+**Thank you for taking the time**
+
 Created by [@Abdullah Böğrek](https://tr.linkedin.com/in/abdullahbogrek)
 
 Mail: asbogrek@gmail.com
