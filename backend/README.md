@@ -2,7 +2,7 @@
 
 - Architectural standards, flexibility, expandability, simplicity, and security principles were all considered when designing the API.
 
-    | Plugin | Appointment | Servive | Staff |
+    |  | Appointment | Servive | Staff |
     | ------ | ------ | ------ | ------ |
     | **GET** | /api/v1/Appointments | /api/v1/Services | /api/v1/Staffs |
     | **POST** | /api/v1/Appointments | /api/v1/Services | /api/v1/Staffs |
