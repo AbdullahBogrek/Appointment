@@ -27,18 +27,6 @@ builder.Services.AddDbContext<AppointmentDbContext>(
     )
 );
 
-builder.Services.AddDbContext<ServiceDbContext>(
-    options => options.UseSqlServer(
-        builder.Configuration.GetConnectionString("DatabaseConnection")
-    )
-);
-
-builder.Services.AddDbContext<StaffDbContext>(
-    options => options.UseSqlServer(
-        builder.Configuration.GetConnectionString("DatabaseConnection")
-    )
-);
-
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
