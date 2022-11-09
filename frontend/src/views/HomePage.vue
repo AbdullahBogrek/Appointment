@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div v-if="!appointment_list.length" class="table-placeholder">
+        <div v-if="!appointmentList.length" class="table-placeholder">
             <TablePlaceholder />
         </div>
         <div v-else class="row">
@@ -49,13 +49,13 @@ export default {
   },
   data() {
     return {
-        appointment_list : [],
-        search: "",
+        appointmentList : [],
+        search: ""
     }
   },
   mounted() {
-    this.$appAxios.get("/Appointments").then(appointment_list_res => {
-        this.appointment_list = appointment_list_res.data || []
+    this.$appAxios.get("/Appointments").then(appointmentListRes => {
+        this.appointmentList = appointmentListRes.data || []
     })
   },
   methods: {
@@ -63,7 +63,7 @@ export default {
         this.$appAxios.delete(`/Appointments/${appointment.appointmentId}`).then(delete_response => {
             console.log(delete_response);
             if (delete_response.status == 200){
-                this.appointment_list = this.appointment_list.filter(
+                this.appointmentList = this.appointmentList.filter(
                     appt => appt.appointmentId != appointment.appointmentId
                 )
             }
@@ -72,7 +72,7 @@ export default {
   },
   computed: {
     filteredList() {
-        return this.appointment_list.filter(appt => 
+        return this.appointmentList.filter(appt => 
             appt.patientName.toLowerCase().includes(this.search.toLowerCase())
         );
     }
