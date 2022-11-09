@@ -15,7 +15,7 @@
 - Form Validation and Past Date Control
 ![Form validation](https://user-images.githubusercontent.com/49994631/200799223-d2c0ca6b-2faf-40e7-91a2-4e15b1a051f2.PNG)
 
-![past date controll](https://user-images.githubusercontent.com/49994631/200799318-0865ce0e-4779-4d8b-9641-ccb08047a2d1.PNG)
+- ![past date controll](https://user-images.githubusercontent.com/49994631/200799318-0865ce0e-4779-4d8b-9641-ccb08047a2d1.PNG)
 
 - Delete Modal
 ![delete modal](https://user-images.githubusercontent.com/49994631/200799529-a2b57aed-7fbb-4477-98cd-16f755a2b60f.PNG)
