@@ -20,6 +20,12 @@
 - Delete Modal
 ![delete modal](https://user-images.githubusercontent.com/49994631/200799529-a2b57aed-7fbb-4477-98cd-16f755a2b60f.PNG)
 
+- Home Page
+![Appointment Page](https://user-images.githubusercontent.com/49994631/200800649-52e7b558-7955-4335-9900-88b4c65588b5.PNG)
+
+- New Appointment Page
+![New Appointment Page](https://user-images.githubusercontent.com/49994631/200800687-c8dce397-b7c4-4d5f-bbf1-9c615696a964.PNG)
+
 
 ## Project setup
 ```
