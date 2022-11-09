@@ -22,7 +22,7 @@ https://user-images.githubusercontent.com/49994631/200789639-f2efc3b7-8d25-4621-
 
 ## General Information
 
-- While designing the interfacec, Bootstrap, an open source CSS framework, was used instead of dealing with unnecessary CSS definitions. Using the "Appointment" interface, the user can make new appointments, delete existing ones, and track the ones they've already made. In addition, the frontend was designed with **simplicity** and **usability** in mind. Controls have also been added to prevent users from making mistakes such as leaving data cells blank or selecting the past date as the appointment date when creating a new record.
+- While designing the interface, ``Bootstrap``, an open source CSS framework, was used instead of dealing with unnecessary CSS definitions. Using the "Appointment" interface, the user can make new appointments, delete existing ones, and track the ones they've already made. In addition, the frontend was designed with **simplicity** and **usability** in mind. Controls have also been added to prevent users from making mistakes such as leaving data cells blank or selecting the past date as the appointment date when creating a new record.
 
 - The API was designed with the principles of **flexibility**, **security**, and **simplicity** in mind. Although measures for data consistency on the frontend have been taken, validations for errors that may occur during **CRUD** operations have been added. The API was designed with the goal of minimizing dependencies and standardizing them so that they could scale. As a result, this rule has been applied everywhere, from file names to file structure. Every API request or error is **logged** by the middleware that was created.
 
