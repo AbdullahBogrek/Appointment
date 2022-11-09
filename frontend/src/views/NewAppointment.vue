@@ -14,7 +14,7 @@
                         </div>
 
                         <div class="form-floating mb-4">
-                            <select v-model="staffName"  class="form-select shadow" id="floatingSelectPersonel" @change="numberToString" aria-label="Floating label select personel" required>
+                            <select v-model="staffName" class="form-select shadow" id="floatingSelectPersonel" @change="numberToString" aria-label="Floating label select personel" required>
                                 <option v-for="staff in staff_list" :key="staff.staffId" v-bind:value="staff.staffId">{{ staff.staffName }}</option>
                             </select>
                             <label for="floatingSelectPersonel">Personel</label>
@@ -66,7 +66,7 @@
                                     {{ selectedService.serviceName }}
                                 </div>
                                 <div class="col-1 text-end">
-                                    <DeleteModal @delete-event="deleteSelectedService(selectedService)" />
+                                    <DeleteModal message="Bu servisi silmek istediğine emin misin?" @delete-event="deleteSelectedService(selectedService)" />
                                 </div>
                             </div>
                         </div>
@@ -94,6 +94,7 @@ export default {
         dateOfAppt: "",
         timeOfAppt: "",
         staffName: "",
+        services: "",
         appointmentData: {
             patientName: null,
             staffId: null,
@@ -130,10 +131,12 @@ export default {
                 return console.log("Randevu bilgileri olmadan kayıt işlemi yapılamaz.")
             else{
                 console.log(this.appointmentData);
+                let serv = this.selectedServiceList.map(u => u.serviceName).join(" | ")
+                this.appointmentData.services = serv
                 this.$appAxios.post("/Appointments", this.appointmentData).then(save_response => {
                     console.log("save_response", save_response);
-                    this.resetData();
                     this.$router.push("/");
+                    this.resetData();
                 });
             }
         },
@@ -143,7 +146,7 @@ export default {
             ))
         },
         setSelectedServices(e) {
-            const selectedService = this.service_list[e.target.value -1];
+            const selectedService = this.service_list[e.target.value - 1];
             
             let index = this.selectedServiceList.findIndex(x => x.serviceId == selectedService.serviceId);
 
