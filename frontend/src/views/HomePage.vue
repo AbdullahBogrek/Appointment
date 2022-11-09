@@ -28,8 +28,8 @@
                         <td>{{ (appointment.staffName).split("_")[0] + " " + (appointment.staffName).split("_")[1] }}</td>
                         <td>{{ appointment.appointmentDate.split(" ")[0] }}</td>
                         <td>{{ appointment.appointmentDate.split(" ")[1] }}</td>
-                        <td>Kanal Tedavisi | Genel Muayene | Ortodonti</td>
-                        <td class="d-flex justify-content-end"><DeleteModal @delete-event="deleteAppointment(appointment)"/></td>
+                        <td>{{ appointment.services }}</td>
+                        <td class="d-flex justify-content-end"><DeleteModal message="Bu randevuyu silmek istediğine emin misin?" @delete-event="deleteAppointment(appointment)"/></td>
                     </tr>
                 </tbody>
             </table>
