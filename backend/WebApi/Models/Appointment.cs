@@ -11,6 +11,8 @@ namespace WebApi.Models
 
         public int StaffId { get; set; }
 
+        public Staff Staff { get; set; }
+
         public DateTime AppointmentDate { get; set; }
 
         public string Services { get; set; } = string.Empty;
@@ -20,4 +22,3 @@ namespace WebApi.Models
     }
 
 }
-
