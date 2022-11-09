@@ -5,7 +5,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content rounded-3 shadow">
                 <div class="modal-body p-4 text-center">
-                    <h5 class="mb-2">Bu servisi silmek istediğine emin misin?</h5>
+                    <h5 class="mb-2">{{ message }}</h5>
                     <p class="mb-0">Silinen kayıtlar geri getirilememektedir. Yaptığınız işlemden emin olunuz.</p>
                 </div>
                 <div class="modal-footer flex-nowrap p-0">
@@ -20,6 +20,7 @@
 <script>
 export default {
     emits: ["delete-event"],
+    props: ["message"],
     data() {
         return {
             showModal: false
