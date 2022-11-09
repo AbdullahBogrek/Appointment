@@ -10,6 +10,10 @@ namespace WebApi.DBOperations
 
         public DbSet<Appointment> Appointments { get; set; }
 
+        public DbSet<Service> Services { get; set; }
+
+        public DbSet<Staff> Staffs { get; set; }
+
     }
     
 }
